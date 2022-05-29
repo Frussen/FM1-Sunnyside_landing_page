@@ -126,7 +126,7 @@ body {
 }
 
 .header {
-  background: url("../../images/mobile/image-header.jpg");
+  background: url("../images/mobile/image-header.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
@@ -294,7 +294,7 @@ body {
 
 @media only screen and (min-width: 769px) {
   .header {
-    background: url("../../images/desktop/image-header.jpg");
+    background: url("../images/desktop/image-header.jpg");
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
