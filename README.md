@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./FireShot_Sunnyside_desktop.png)     <-- desktop screenshot
-![](./FireShot_Sunnyside_mobile.png)      <-- mobile screenshot
+![](./images/FireShot_Sunnyside_desktop.png)     <-- desktop screenshot
+![](./images/FireShot_Sunnyside_mobile.png)      <-- mobile screenshot
 
 ### Links
 
