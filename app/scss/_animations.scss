@@ -1,0 +1,60 @@
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    visibility: visible;
+    opacity: 1;
+
+  }
+}
+
+.fade-in {
+  animation: fade-in 300ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fade-out 300ms ease-in-out forwards;
+}
+
+
+
+
+//menu icon open and close
+.open {
+  .header__menu {
+    :first-child {
+      transform: rotate(-45deg);
+    }
+    :nth-child(2) {
+      transform: scaleX(0);
+    }
+    :last-child {
+      transform: rotate(45deg);
+    }
+  }
+}

@@ -1,0 +1,182 @@
+.features {
+  img {
+    width: 100%;
+    display: block;
+
+    &.degg,
+    &.dglass,
+    &.dcherries,
+    &.dorange {
+      display: none;
+    }
+  }
+}
+
+.text {
+  flex-basis: 100%;
+  margin: 0 30px;
+  background-color: $white;
+  text-align: center;
+
+  h2 {
+    margin: 66px 0 30px;
+    font-size: 1.9em;
+    font-weight: 900;
+  }
+
+  p {
+    font-family: 'Barlow', sans-serif;
+    color: $darkGrayBlue;
+    font-size: 1.1em;
+    line-height: 1.66;
+  }
+
+  a {
+    display: block;
+    margin: 39px 0 64px;
+    font-size: 1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: underline $vLightYellow 5px;
+    text-underline-offset: -3px;
+    color: black;
+    transition: all 200ms ease-in-out;
+
+    &.pink {
+      text-decoration: underline $vSoftRed 5px;
+
+      &:hover {
+        text-decoration: underline $softRed 5px;
+      }
+    }
+
+    &:hover {
+      text-decoration: underline $lightYellow 5px;
+    }
+  }
+}
+
+.imgntxt {
+  position: relative;
+  display: block;
+  text-align: center;
+
+  .txt {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+
+    h2 {
+      margin: 106.67vw 0 30px;
+      font-size: 1.9em;
+      font-weight: 900;
+    }
+
+    p {
+      margin: 0 6.4vw;
+      font-size: 0.9em;    
+      font-family: 'Barlow', sans-serif;
+      line-height: 1.66;
+    }
+
+    &__1 {
+      color: $darkDesCyan;
+    }
+
+    &__2 {
+      color: $darkBlue;
+    }
+  }
+}
+
+
+
+
+
+// Media query for desktop
+@media only screen and (min-width: 769px) {
+
+  .container1,
+  .container2,
+  .container3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    img {
+      width: 50%;
+      min-height: 50%;
+
+      &.megg,
+      &.mglass,
+      &.mcherries,
+      &.morange {
+        display: none;
+      }
+
+      &.degg {
+        display: block;
+        order: 2;
+      }
+
+      &.dglass {
+        display: block;
+      }
+
+      &.dcherries,
+      &.dorange {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+
+  .text {
+    flex: 1;
+    text-align: left;
+    margin: 0 8.125vw 0 11.458vw;
+
+    h2 {
+      margin: 168px 0 37px;
+      font-size: 2.37em;
+      font-weight: 900;
+    }
+
+    a {
+      margin-bottom: 158px;
+    }
+
+    &.second {
+      order: 2;
+    }
+  }
+
+  .imgntxt {
+    flex: 1;
+
+    .txt {
+      h2 {
+        margin: 27vw 0 30px;
+      }
+
+      p {
+        margin: 0 13.5vw;
+      }
+    }
+  }
+
+  // Media query for tablet
+  @media only screen and (max-width: 1200px) {
+    .imgntxt {
+      .txt {
+        h2 {
+          margin: 23vw 0 30px;
+        }
+
+        p {
+          margin: 0 5vw;
+        }
+      }
+    }
+  }
+}

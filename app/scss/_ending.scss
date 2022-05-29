@@ -1,0 +1,220 @@
+.testimonials {
+  text-align: center;
+  margin: 0 29px 88px;
+
+  h3 {
+    margin: 64px 0;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: $darkGrayBlue;
+    letter-spacing: 4px;
+  }
+
+  .person {
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 25%;
+      border-radius: 100px;
+    }
+
+    p {
+
+      &.comment {
+        margin: 36px 0 0;
+        color: $darkGrayBlue;
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.07em;
+        line-height: 1.6;
+      }
+
+      &.name {
+        margin: 36px 0 0;
+        font-size: 1.27em;
+        font-weight: 900;
+      }
+
+      &.role {
+        margin: 10px 0 70px;
+        font-family: 'Barlow', sans-serif;
+        color: $grayBlue;
+      }
+    }
+  }
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  img {
+    display: block;
+    width: 100%;
+
+    &.dmilk,
+    &.dcutorange,
+    &.dcone,
+    &.dsugarcube {
+      display: none;
+    }
+  }
+}
+
+.footer {
+  padding-top: 66px;
+  background-color: $lightGreen;
+
+  &__logo {
+    display: block;
+    text-align: center;
+    margin: 0 0 46px;
+
+    img {
+      width: 188px;
+    }
+  }
+
+  .links {
+    margin: 0 10.67vw 87px;
+
+    a {
+      text-decoration: none;
+      color: $darkDesCyan;
+
+      &:active {
+        color: $white;
+      }
+    }
+  }
+
+  .social {
+    padding: 0 27.73vw 77px;
+
+    a {
+      display: inline-block;
+      position: relative; 
+      z-index: 1;
+
+      span {
+        display: inline-block;
+
+        object {
+          position: relative; 
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
+
+.attribution { 
+  font-size: 13px;
+  text-align: center;
+  padding: 17px;
+
+  a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+// Media query for desktop
+@media only screen and (min-width: 769px) {
+  .testimonials {
+    display: grid;
+    margin: 160px 150px;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 37px;
+    grid-template-areas:
+      "a a a"
+      "b c d"
+    ;
+  
+    h3 {
+      grid-area: a;
+      margin: 0 0 86px;
+      font-size: 1.52em;
+      color: $darkGrayBlue;
+      letter-spacing: 4px;
+    }
+  
+    .person {
+
+      &.emily {
+        grid-area: b;
+        width: 100%;
+      }
+
+      &.thomas {
+        grid-area: c;
+        width: 100%;
+      }
+
+      &.jennie {
+        grid-area: d;
+        width: 100%;
+      }
+      
+      img {
+        width: 22%;
+      }
+  
+      p {
+  
+        &.comment {
+          margin: 61px 0 0;
+        }
+  
+        &.name {
+          margin: 67px 0 0;
+        }
+  
+        &.role {
+          margin: 10px 0 0;
+        }
+      }
+    }
+  }
+
+  .images {
+    grid-template-columns: repeat(4, 1fr);
+
+    img {
+  
+      &.mmilk,
+      &.mcutorange,
+      &.mcone,
+      &.msugarcube {
+        display: none;
+      }
+
+      &.dmilk,
+      &.dcutorange,
+      &.dcone,
+      &.dsugarcube {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  .footer {  
+    .links {
+      margin: 0 39.72vw 87px;
+    }
+  
+    .social {
+      padding: 0 44.31vw 77px;
+    }
+  }
+}
